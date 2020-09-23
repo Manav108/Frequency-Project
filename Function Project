@@ -1,0 +1,19 @@
+##Function Project
+
+
+print("Counting the number of letter in a words")
+
+def count(string1):
+    dict = {}
+    n = 0
+    for n in string1:
+        keys = dict.keys()
+        if n in keys:
+            dict[n] += 1
+        else:
+            dict[n] = 1
+    return dict
+
+string1 = input("Enter your string :")
+print("Your Result : ")
+count(string1)
